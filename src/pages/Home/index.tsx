@@ -52,8 +52,8 @@ export default function Home()
             <div className="info main">
                 <div className="head">
                     <h2>Events</h2>
-                    <span className="divider"></span>
-                    <span className="see">see all</span>
+                    <span className="divider"> </span>
+                    <span className="see"><b>see all</b></span>
                 </div>
                 <div className="car">
                     {events.map((event, i) =>
@@ -61,11 +61,11 @@ export default function Home()
                               info={event.intro}/>)}
                 </div>
             </div>
-            <div className="info main">
+            <div className="info main" name="blog" id="blog">
                 <div className="head">
                     <h2>Blogs</h2>
-                    <span className="divider"></span>
-                    <span className="see">see all</span>
+                    <span className="divider"> </span>
+                    <span className="see "><b>see all</b></span>
                 </div>
                 <div className="car">
                     {blogs.map((event, i) =>

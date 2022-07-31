@@ -32,24 +32,29 @@ const Header = ({hidePath}: { hidePath?: boolean }) =>
     return (
         <div>
             {(windowSize.innerWidth < 767) &&
-                <div className="align-content-end">
+                <div>
                     <Sidebar pageWrapId={"page-wrap"} outerContainerId={"outer-container"}/>
                 </div>
             }
             <div className="nav">
                 <div id="3root" style={{zIndex: 90, overflow: "hidden"}}/>
+                <div className="nav-items">
+                <a href="/">
+                    <img
+                    className="logo"
+                    src={Logo}
+                    height={100}
+                    width={100}
+                    alt="logo"
+                />
+                </a>
+                </div>
                 {(windowSize.innerWidth >= 767) &&
                     <div className="nav-items">
-                        <img
-                            className="logo"
-                            src={Logo}
-                            height={100}
-                            width={100}
-                            alt="logo"
-                        />
+
                         <i className="fa fa-bars burger"/>
                         <Link to="/">
-                            <span className="navcont">home</span>
+                            <span className="navcont">Home</span>
                         </Link>
                         <Link to="/about">
                             <span className="navcont">About</span>
@@ -58,10 +63,13 @@ const Header = ({hidePath}: { hidePath?: boolean }) =>
             <span className="navcont">Events</span>
           </Link> */}
                         <Link to="/members">
-                            <span className="navcont">members</span>
+                            <span className="navcont">Members</span>
+                        </Link>
+                        <Link to="/#blog">
+                            <span className="navcont">Blog</span>
                         </Link>
                         <Link to="/contact">
-                            <span className="navcont">contact</span>
+                            <span className="navcont">Contact</span>
                         </Link>
                     </div>
                 }

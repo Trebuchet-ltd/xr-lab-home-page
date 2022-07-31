@@ -1,23 +1,27 @@
 import React from "react";
 import { elastic as Menu } from "react-burger-menu";
 import "./Sidebar.css";
+import {Link} from "react-router-dom";
 
-export default props => 
+export default () =>
 {
     return (
         <Menu>
-            <a className="menu-item" href="/">
+            <Link className="menu-item" to="/">
                 Home
-            </a>
-            <a className="menu-item" href="/">
+            </Link>
+            <Link className="menu-item" to="/about">
                 About
-            </a>
-            <a className="menu-item" href="/">
+            </Link>
+            <Link className="menu-item" to="/members">
                 Members
-            </a>
-            <a className="menu-item" href="/">
+            </Link>
+            <Link className="menu-item" to="/#blog">
+                Blog
+            </Link>
+            <Link className="menu-item" to="/contact">
                 Contact
-            </a>
+            </Link>
         </Menu>
     );
 };

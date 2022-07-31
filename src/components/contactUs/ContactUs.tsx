@@ -9,12 +9,12 @@ const ContactUs = () => {
     <>
       <Header />
       <div className="container">
-        <div className="contact">
+        <div className="contact p-2 m-1">
           <div className="row">
             <div className="col-lg-5">
               <h1
-                className="con-h1"
-                style={{ fontWeight: "700", fontSize: "62px" }}
+                className="con-h1 font-weight-bold"
+                // style={{ fontWeight: "700", fontSize: "62px" }}
               >
                 Contact Us
               </h1>
@@ -23,20 +23,20 @@ const ContactUs = () => {
               <hr style={{ marginTop: "4rem" }} />
             </div>
           </div>
-          <p style={{ color: "grey" }}>
+          <p  style={{ color: "grey" }}>
             If you would like to learn more about our lab, please drop us an
             email. We would love to hear from you.
           </p>
           <div className="address mt-3">
             <h2>Address</h2>
-            <div
-              style={{
-                color: "red",
-                backgroundColor: "red",
-                height: "4px",
-                width: "40%",
-              }}
-            ></div>
+            {/*<div*/}
+            {/*  style={{*/}
+            {/*    color: "red",*/}
+            {/*    backgroundColor: "red",*/}
+            {/*    height: "4px",*/}
+            {/*    width: "40%",*/}
+            {/*  }}*/}
+            {/*></div>*/}
             <p className="mt-4" style={{ color: "grey" }}>
               XR Lab Cusat, Student Amenity Centre <br />
               Cochin University of Science and Technology <br />

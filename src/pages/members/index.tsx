@@ -42,7 +42,7 @@ export default function CenteredTabs()
                 <>
                     <div className="head mt">
                         <h6>Phd Students</h6>
-                        <span className="divider"></span>
+                        <span className="divider"> </span>
                     </div>
                     <div className="car mt">
                         <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" name="sree" />
@@ -51,7 +51,7 @@ export default function CenteredTabs()
                     </div>
                     <div className="head mt">
                         <h6>UnderGraduate students</h6>
-                        <span className="divider"></span>
+                        <span className="divider"> </span>
                     </div>
                     <div className="car mt">
                         <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
@@ -60,7 +60,7 @@ export default function CenteredTabs()
                     </div>
                     <div className="head mt">
                         <h6>Masters Students</h6>
-                        <span className="divider"></span>
+                        <span className="divider"> </span>
                     </div>
                     <div className="car mt">
                         <Card img={URL} alt="college" info="amazing and cool college i recomend you guys to come here and study" />
@@ -88,7 +88,7 @@ export default function CenteredTabs()
                 </div>
                 <div className="head">
                     <h2>Members</h2>
-                    <span className="divider"></span>
+                    <span className="divider"> </span>
                 </div>
                 <Box sx={{ width: "100%", bgcolor: "background.paper" }}>
                     <Tabs value={value} onChange={handleChange} centered indicatorColor="primary">
